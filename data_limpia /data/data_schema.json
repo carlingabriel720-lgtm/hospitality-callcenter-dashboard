@@ -1,0 +1,50 @@
+{
+    "dataset_name": "Executive Operations Call Volume & Demand Dataset",
+    "version": "1.0",
+    "description": "Multi-year aggregated operations and call center performance data (2023-2026), fully anonymized.",
+    "schema": {
+        "Date": {
+            "type": "string",
+            "format": "YYYY-MM-DD",
+            "description": "The specific calendar date of the operational log."
+        },
+        "Day": {
+            "type": "string",
+            "description": "Day of the week (e.g., Monday, Tuesday, etc.)."
+        },
+        "Period": {
+            "type": "string",
+            "description": "Hourly time block interval (e.g., '00:00 - 01:00')."
+        },
+        "Taken": {
+            "type": "float",
+            "description": "Total number of calls or operational requests handled during the given period."
+        },
+        "Year": {
+            "type": "string",
+            "description": "Extracted four-digit calendar year for macro filtering."
+        },
+        "Month": {
+            "type": "string",
+            "description": "Full name of the month (e.g., January, February)."
+        }
+    },
+    "sample_rows": [
+        {
+            "Date": "2026-01-01",
+            "Day": "Thursday",
+            "Period": "00:00 - 01:00",
+            "Taken": 12.0,
+            "Year": "2026",
+            "Month": "January"
+        },
+        {
+            "Date": "2026-01-01",
+            "Day": "Thursday",
+            "Period": "01:00 - 02:00",
+            "Taken": 8.0,
+            "Year": "2026",
+            "Month": "January"
+        }
+    ]
+}
